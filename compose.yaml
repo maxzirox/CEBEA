@@ -1,0 +1,7 @@
+services:
+  cebea:
+    build: .
+    image: cebea-web:latest
+    restart: unless-stopped
+    ports:
+      - "${APP_PORT:-8080}:80"
